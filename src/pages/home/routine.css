@@ -1,0 +1,27 @@
+.routine-container {
+  /* background-color: red; */
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw;
+  height: 90vh;
+}
+
+.routine-column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 10%;
+  background-color: rgba(45, 75, 100, 0.425);
+  border-radius: 8px;
+  padding: 6px;
+}
+
+.top-controls {
+
+}
+
+.routines-list {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
