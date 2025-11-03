@@ -1,17 +1,12 @@
-/* @font-face {
-  font-family: Test;
-  src: url()
-} */
-
 :root {
   --color-bg-primary: #dfddd7;
-  --bg: #f7f8fa;
-  --card: #ffffff;
-  --muted: #6b7280;
-  --primary: #4e92a9;
-  --accent: #f8b056;
-  --radius: 12px;
-  --gap: 12px;
+  --color-bg-box: #7aa2b4;
+  --color-accent: #f8b056;
+  --color-text-dark: #333;
+  --color-text-light: #fff;
+  --radius: 8px;
+  --shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
 }
 
 * {
@@ -20,11 +15,45 @@
   box-sizing: border-box;
 }
 
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   background-color: var(--color-bg-primary);
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Inter", Arial, sans-serif;
+  color: var(--color-text-dark);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: var(--radius);
+  padding: 8px 14px;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+button.primary {
+  background-color: var(--color-bg-box);
+  color: var(--color-text-light);
+}
+
+button.primary:hover {
+  background-color: var(--color-accent);
+}
+
+button.full {
   width: 100%;
-  height: 100vh;
+}
+
+.placeholder {
+  color: #666;
+  font-style: italic;
+  text-align: center;
+  margin-top: 2rem;
 }

@@ -1,9 +1,3 @@
-// import React, { useState } from 'react';
-// import Header from './components/header/Header';
-// import { AddRoutineModal } from './components/addRoutineModal';
-// import ServiceList from './components/ServiceList/ServiceList';
-// import RoutineCanvas from './components/RoutineCanvas/RoutineCanva';
-// import { useRoutines } from './services/useRoutine';
 // import './App.css';
 import Routine from './pages/home/Routine';
 

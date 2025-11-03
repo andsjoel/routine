@@ -46,18 +46,7 @@ const Routine = () => {
         </div>
       </div>
 
-      <div className="middle-column">
-        {selectedRoutine ? (
-          <RoutineCanvas
-            routine={selectedRoutine}
-            updateServiceTime={updateServiceTime}
-          />
-        ) : (
-          <div className="placeholder">Selecione uma rotina para editar</div>
-        )}
-      </div>
-
-      <div className="right-column">
+      <div className="services-column">
         <ServiceList
           onAddService={(s) =>
             addServiceToRoutine(
@@ -66,6 +55,17 @@ const Routine = () => {
             )
           }
         />
+      </div>
+
+      <div className="canva-column">
+        {selectedRoutine ? (
+          <RoutineCanvas
+            routine={selectedRoutine}
+            updateServiceTime={updateServiceTime}
+          />
+        ) : (
+          <div className="placeholder">Selecione uma rotina para editar</div>
+        )}
       </div>
 
       {modalOpen && (
